@@ -1,0 +1,26 @@
+<head>
+    <title>kinetic-captcha</title>
+</head>
+
+<body>
+    {{> hello}} {{>formcaptcha}}
+</body>
+
+<template name="hello">
+    <h1>Hello World!</h1>
+    <p>{{greeting}}</p> <p>{{developedby}}</p>
+</template>
+
+<template name="formcaptcha">
+    <form>
+        <p>
+            <div id="captcha"></div>
+        </p>
+        <p>
+            <input id="inpCapRes" type="text" placeholder="input captcha text" />
+        </p>
+        <p>
+            <input type="submit" value="submit" />
+        </p>
+    </form>
+</template>
